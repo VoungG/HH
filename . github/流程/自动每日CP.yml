@@ -42,10 +42,10 @@ jobs:
           EOF
       - name: Run program
         env:
-          SCHOOL_NAME: ${{ secrets.SCHOOL_NAME }}
-          ACCOUNT: ${{ secrets.ACCOUNT }}
-          PASSWORD: ${{ secrets.PASSWORD }}
-          ADDRESS: ${{ secrets.ADDRESS }}
+          SCHOOL_NAME: ${{ secrets.安徽职业技术学院 }}
+          ACCOUNT: ${{ secrets.2019187222 }}
+          PASSWORD: ${{ secrets.Az05351X }}
+          ADDRESS: ${{ secrets.中国安徽省合肥市瑶海区浍南路 }}
         run: |
           python3 DailyCP.py ${SCHOOL_NAME} ${ACCOUNT} ${PASSWORD} ${ADDRESS}
       - name : Upload formdb
